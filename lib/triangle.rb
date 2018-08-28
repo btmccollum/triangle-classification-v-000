@@ -1,3 +1,5 @@
+require 'pry'
+
 class Triangle
   # write code here
   attr_accessor :a, :b, :c, :equilateral, :isosceles, :scalene
@@ -11,8 +13,8 @@ class Triangle
   def kind
     if a == 0 || b == 0 || c == 0
       begin
-        raise Triangle::TriangleError
-      rescue Triangle::TriangleError => error
+        raise TriangleError
+      rescue TriangleError => error
         puts error.message
       end
     elsif a == b && b ==c
@@ -30,3 +32,4 @@ class Triangle
     end
   end
 end
+binding.pry
