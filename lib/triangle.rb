@@ -24,7 +24,7 @@ class Triangle
     end
   end
 
-  class TriangleError < StandardError
+  class TriangleError < ScriptError
     def message
       "Invalid triangle size provided."
     end
