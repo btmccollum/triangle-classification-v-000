@@ -22,7 +22,6 @@ class Triangle
       :scalene
     end
   end
-  end
 
   class TriangleError < Standard Error
     def message
