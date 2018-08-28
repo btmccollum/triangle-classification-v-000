@@ -8,8 +8,7 @@ class Triangle
     @c = c
   end
 
-  def kind
-    binding.pry
+  def kind #very basic breakout of formulas to check for triangle validity and type
     if (a <= 0 || b <= 0 || c <= 0) || (a + b <= c || a + c <= b || b + c <= a)
       begin
         raise TriangleError
