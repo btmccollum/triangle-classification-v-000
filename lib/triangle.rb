@@ -14,6 +14,7 @@ class Triangle
         raise TriangleError
       rescue TriangleError => error
         puts error.message
+      end
     elsif a == b && b ==c
       :equilateral
     elsif (a != b && b == c) || (a == b && b != c) || (a == c && b != c)
