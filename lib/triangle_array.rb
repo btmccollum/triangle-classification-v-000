@@ -19,6 +19,7 @@ class Triangle
       :isosceles
     else
       :equilateral
+    end
   end
 
   class TriangleError < StandardError
