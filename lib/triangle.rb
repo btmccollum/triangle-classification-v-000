@@ -9,7 +9,12 @@ class Triangle
   end
 
   def kind
-    if a == b && b ==c
+    if a == 0 || b == 0 || c == 0
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+        puts error.message
+    elsif a == b && b ==c
       :equilateral
     elsif (a != b && b == c) || (a == b && b != c) || (a == c && b != c)
       :isosceles
@@ -17,8 +22,10 @@ class Triangle
       :scalene
     end
   end
-  #
-  # class TriangleError < Standard Error
-  #
-  # end
+
+  class TriangleError < Standard Error
+    def message
+      "Invalid triangle size provided."
+    end
+  end
 end
