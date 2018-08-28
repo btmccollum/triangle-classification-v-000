@@ -1,6 +1,14 @@
 class Triangle
   # write code here
-  def kind(a, b, c)
+  attr_accessor :a, :b, :c, :equilateral, :isosceles, :scalene
+
+  def initialize(a, b, c)
+    @a = a
+    @b = b
+    @c = c
+  end
+
+  def kind
     if a == b && b ==c
       :equilateral
     elsif a!=b && b=c || a==b && b!=c || a==c && b!=c
