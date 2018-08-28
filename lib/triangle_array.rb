@@ -7,7 +7,7 @@ class Triangle
     @c = c
   end
 
-  def kind
+  def kind #uses a sorted array to determine triangle type and validity
     sides = [a, b, c].sort
     if sides.include?(0) || (sides[0] + sides[1] <= sides[2])
       begin
