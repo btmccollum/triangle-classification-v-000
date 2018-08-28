@@ -24,7 +24,6 @@ class Triangle
     elsif a != b && b != c
       :scalene
     end
-    binding.pry
   end
 
   class TriangleError < StandardError
