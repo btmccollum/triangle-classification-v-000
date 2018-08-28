@@ -13,7 +13,7 @@ class Triangle
       begin
         raise TriangleError
       end
-    if sides.uniq.size == 3
+    elsif sides.uniq.size == 3
       :scalene
     elsif side.uniq.size == 2
       :isosceles
