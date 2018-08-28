@@ -9,8 +9,8 @@ class Triangle
       :scalene
     end
   end
-
-  class TriangleError < Standard Error
-
-  end
+  # 
+  # class TriangleError < Standard Error
+  # 
+  # end
 end
