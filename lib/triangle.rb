@@ -14,7 +14,7 @@ class Triangle
     if a <= 0 || b <= 0 || c <= 0
       begin
         raise TriangleError
-      # rescue TriangleError => error 
+      # rescue TriangleError => error
         # error.message
       end
     elsif a == b && b ==c
