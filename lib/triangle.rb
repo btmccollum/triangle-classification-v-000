@@ -17,8 +17,7 @@ class Triangle
       end
     elsif a == b && b ==c
       :equilateral
-    # elsif (a != b && b == c) || (a == b && b != c) || (a == c && b != c)
-  elsif a == b || a == c || b == c
+    elsif a == b || a == c || b == c
       :isosceles
     else
       :scalene
