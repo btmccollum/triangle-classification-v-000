@@ -15,7 +15,7 @@ class Triangle
       end
     elsif sides.uniq.size == 3
       :scalene
-    elsif side.uniq.size == 2
+    elsif sides.uniq.size == 2
       :isosceles
     else
       :equilateral
